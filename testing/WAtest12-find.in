@@ -1,0 +1,41 @@
+#Find
+> init
+<<<
++ wug.txt wug.txt
+> add wug.txt
+<<<
+> commit "wug"
+<<<
++ wag.txt wag.txt
+> add wag.txt
+<<<
+> commit "wag"
+<<<
+# Each ${HEADER} captures its commit UID.
+D UID "[a-f0-9]+"
+D HEADER "commit (${UID})"
+D DATE "Date: \w\w\w \w\w\w \d+ \d\d:\d\d:\d\d \d\d\d\d [-+]\d\d\d\d"
+> log
+===
+${HEADER}
+${DATE}
+wag
+
+===
+${HEADER}
+${DATE}
+wug
+
+===
+${HEADER}
+${DATE}
+initial commit
+
+<<<*
+# UID of second version
+D UID2 "${1}"
+# UID of current version
+D UID1 "${2}"
+> find "wug"
+${UID1}
+<<<*

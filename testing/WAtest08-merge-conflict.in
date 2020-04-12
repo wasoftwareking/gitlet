@@ -1,0 +1,43 @@
+#Branch
+> init
+<<<
++ wug.txt wug.txt
++ wag.txt wag.txt
++ dag.txt dag.txt
+> add wug.txt
+<<<
+> add wag.txt
+<<<
+> add dag.txt
+<<<
+> commit "wug"
+<<<
+> branch other
+<<<
+> checkout other
+<<<
++ wug.txt notwug.txt
+> add wug.txt
+<<<
+> rm wag.txt
+<<<
+> rm dag.txt
+<<<
+> commit "delete"
+<<<
+> checkout master
+<<<
++ wag.txt wug.txt
++ wug.txt dio.txt
+> add wag.txt
+<<<
+> add wug.txt
+<<<
+> commit "change"
+<<<
+> merge other
+Encountered a merge conflict.
+<<<
+= wug.txt test08-wug.txt
+= wag.txt test08-wag.txt
+* dag.txt

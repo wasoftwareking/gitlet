@@ -1,0 +1,28 @@
+#Branch
+> init
+<<<
++ wug.txt wug.txt
+> add wug.txt
+<<<
+> commit "wug"
+<<<
+> branch other
+<<<
+> checkout other
+<<<
++ wug.txt notwug.txt
+> add wug.txt
+<<<
+> commit "not wug"
+<<<
+> checkout master
+<<<
++ wag.txt wag.txt
+= wug.txt wug.txt
+> add wag.txt
+<<<
+> commit "wag"
+<<<
+> merge other
+<<<
+= wug.txt notwug.txt

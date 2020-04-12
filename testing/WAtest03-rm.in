@@ -1,0 +1,20 @@
+#rm 's edge cases
+> init
+<<<
++ wug.txt wug.txt
+> add wug.txt
+<<<
+> rm wug.txt
+<<<
+# remove from stage area and don't delete
+> commit "should be nothing to commit"
+No changes added to the commit.
+<<<
+E wug.txt
+> add wug.txt
+<<<
+> commit "wug"
+<<<
+> rm wug.txt
+<<<
+* wug.txt

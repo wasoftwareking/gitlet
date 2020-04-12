@@ -1,0 +1,46 @@
+#Branch
+> init
+<<<
++ wug.txt wug.txt
+> add wug.txt
+<<<
+> commit "wug"
+<<<
+> branch other
+<<<
+> checkout other
+<<<
++ wug.txt notwug.txt
+> add wug.txt
+<<<
+> commit "not wug"
+<<<
+> checkout master
+<<<
++ wag.txt wag.txt
+= wug.txt wug.txt
+> add wag.txt
+<<<
+> commit "wag"
+<<<
+> branch mark
+<<<
+> merge other
+<<<
+= wug.txt notwug.txt
+> checkout other
+<<<
++ dio.txt dio.txt
+> add dio.txt
+<<<
+> commit "add dio"
+<<<
+> merge mark
+<<<
+> rm wag.txt
+<<<
+> commit "remove wag.txt"
+<<<
+> merge master
+No changes added to the commit.
+<<<

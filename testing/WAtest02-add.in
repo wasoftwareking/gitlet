@@ -1,0 +1,17 @@
+#Add and its edge cases
+> init
+<<<
++ wug.txt wug.txt
+> add wug.txt
+<<<
+> commit "added wug"
+<<<
++ wug.txt notwug.txt
+> add wug.txt
+<<<
++ wug.txt wug.txt
+> add wug.txt
+<<<
+> commit "should be nothing to commit"
+No changes added to the commit.
+<<<

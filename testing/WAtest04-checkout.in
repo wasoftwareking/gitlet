@@ -1,0 +1,12 @@
+#Checkout filename
+> init
+<<<
++ wug.txt wug.txt
+> add wug.txt
+<<<
+> commit "wug"
+<<<
++ wug.txt notwug.txt
+> checkout -- wug.txt
+<<<
+= wug.txt wug.txt
